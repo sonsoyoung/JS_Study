@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    
+    function power() {
+            var result;
+
+            if (arguments.length == 1) {
+                result = arguments[0] * arguments[0];
+            }
+            else if (arguments.length == 2) {
+                result = arguments[0] * arguments[1];
+            }
+
+            return result;
+
+        }
+
+        //alert(power(2));
+        //alert(power(2, 3));
+
+        function multiply(...numbers) {
+            var result = 1;
+
+            for (var i = 0; i < numbers.length; i++) {
+                result *= numbers[i];
+            }
+            return result;
+        }
+
+        var array = [1, 2, 3];
+        alert(multiply(...array));
+
+        </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+

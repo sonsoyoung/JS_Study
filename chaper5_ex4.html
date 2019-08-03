@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+    function numCheck(...numbers) {
+
+            for(var i =0; i<numbers.length; i++){
+                if(isNaN(Number(numbers[i])))
+                    return "숫자가 아닌 문자열이 포함되있습니다."
+            }
+            return "숫자만 입력했습니다."
+        }
+
+        var input = prompt("입력하세요", "");
+
+        alert(numCheck(input));
+
+        </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
